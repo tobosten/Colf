@@ -1,0 +1,11 @@
+git add .
+git commit
+git push
+
+9-hole calculation:
+
+(Strokes in 9 holes x 113/Slope Rating + second nine par + 0.5 x Course Handicap) – Course Rating.
+second nine counts at par for first nine.
+
+Ex.
+(30 * 113 / 94) + 30 + (0.5 * 32) - 57.8

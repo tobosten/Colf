@@ -15,10 +15,8 @@ export default function HomeScreen() {
       <View style={styles.homeView}>
         <Text style={styles.welcomeText}>Welcome to Colf!</Text>
 
-        <Link href={"/CoursesListScreen"} asChild>
-          <TouchableOpacity style={styles.continueButton}>
-            <Text style={styles.continueButtonText}>Continue to courses</Text>
-          </TouchableOpacity>
+        <Link href={"./CoursesListScreen/CoursesListScreen"} asChild style={styles.continueButton}>
+          <Text style={styles.continueButtonText}>Continue to courses</Text>
         </Link>
       </View>
 
@@ -42,17 +40,16 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     borderWidth: 1,
   },
-
   continueButton: {
-    alignSelf: 'center',
     marginTop: '50%',
     borderWidth: 1,
-    width: '40%',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
     borderRadius: 3,
-    paddingVertical: 7,
   },
   continueButtonText: {
-    alignSelf: 'center'
+    alignSelf: 'center',
+    padding: 'auto'
   }
 });
 
