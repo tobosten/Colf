@@ -26,7 +26,7 @@ export default function coursesListScreen() {
             <FlashList
                 data={courses}
                 renderItem={({ item }) => (
-                    <Link href={`../GolfCourses/${item.name}Courses`} asChild>
+                    <Link href={`../GolfCourses/${item.name}Courses/${item.name}Courses`} asChild>
                         <Pressable style={CourseListStyles.textContainer}>
                             <Text style={CourseListStyles.renderText}>{item.name}</Text>
                         </Pressable>

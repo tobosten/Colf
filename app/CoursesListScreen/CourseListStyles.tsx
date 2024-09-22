@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 const CourseListStyles = StyleSheet.create({
+
     background: {
         marginTop: '10%',
         height: '100%',
@@ -25,7 +26,7 @@ const CourseListStyles = StyleSheet.create({
     renderText: {
         fontSize: 18,
         marginBottom: 10,
-    }
+    },
 
 })
 
