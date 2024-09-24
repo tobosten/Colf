@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import JarlabankeStylesheet from './JarlabankeStylesheet';
+import HeaderComponent from '../../components/Header/Header';
 
 const JarlabankeCourses = () => {
 
@@ -10,27 +11,7 @@ const JarlabankeCourses = () => {
   return (
     <View>
 
-      <View style={JarlabankeStylesheet.goBackView}>
-
-        <Link href={"../../CoursesListScreen/CoursesListScreen"} asChild>
-          <Pressable style={JarlabankeStylesheet.backPressable}>
-
-            <View style={JarlabankeStylesheet.backFlexViewLeft}>
-              <Image
-                style={JarlabankeStylesheet.backImage}
-                source={require('../../../assets/images/chevron_left_24dp.png')} />
-            </View>
-
-            <View style={JarlabankeStylesheet.backFlexViewMiddle}>
-              <Text style={JarlabankeStylesheet.backTitle}>Jarlabanke</Text>
-            </View>
-
-            <View style={JarlabankeStylesheet.backFlexViewRight}></View>
-
-          </Pressable>
-        </Link>
-      </View>
-      <LinearGradient colors={['rgba(117, 117, 117, 0.8)', 'transparent']} style={JarlabankeStylesheet.backViewGradient} />
+      <HeaderComponent title={"Jarlabanke"} hrefPath={"../../../CoursesListScreen/CoursesListScreen"} />
 
       <View>
 

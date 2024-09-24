@@ -5,7 +5,10 @@ import { Link } from 'expo-router';
 const Male9 = () => {
     return (
         <View>
-            <Text>Male9</Text>
+            <Link href={"../JarlabankeCourses"}>
+                <Text>Male9</Text>
+            </Link>
+
         </View>
     )
 }
