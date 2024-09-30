@@ -1,6 +1,15 @@
 git add .
-git commit
+git commit -m
 git push
+
+
+
+
+New Branch: git checkout <branch>
+When change done: git checkout master
+Merges when in master: git merge <branch>
+Removes selected branch: git branch -d <branch>
+
 
 9-hole calculation:
 
