@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native'
 const HeaderStyles = StyleSheet.create({
     goBackView: {
         marginTop: 5,
-        height: 40,
+        height: 50,
         justifyContent: 'center',
         color: 'white',
     },
@@ -23,7 +23,7 @@ const HeaderStyles = StyleSheet.create({
         flex: 1,
     },
     backTitle: {
-        fontSize: 18,
+        fontSize: 22,
     },
     backViewGradient: {
         left: 0,

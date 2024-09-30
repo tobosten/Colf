@@ -14,8 +14,8 @@ export default function HomeScreen() {
 
       <View style={styles.homeView}>
         <Text style={styles.welcomeText}>Welcome to Colf!</Text>
-
-        <Link href={"./CoursesListScreen/CoursesListScreen"} asChild style={styles.continueButton}>
+        {/* ./CoursesListScreen/CoursesListScreen */}
+        <Link href={"./GolfCourses/JarlabankeCourses/Male9/Male9"} asChild style={styles.continueButton}>
           <Text style={styles.continueButtonText}>Continue to courses</Text>
         </Link>
       </View>
