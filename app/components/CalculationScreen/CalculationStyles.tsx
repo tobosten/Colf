@@ -1,6 +1,14 @@
 import { StyleSheet } from 'react-native'
 
+
+
+let titleBoldness = 500;
+
+
+
+//Colors: #8586cf  #9ea2db  #bac1e7
 const CalculationStyles = StyleSheet.create({
+
     teeContainer: {
         width: '90%',
         alignSelf: 'center'
@@ -11,27 +19,29 @@ const CalculationStyles = StyleSheet.create({
         fontSize: 20,
         marginTop: '10%',
         marginBottom: 10,
+        fontWeight: "500",
     },
     teeButtonView: {
         flexDirection: 'row',
         alignSelf: 'center',
     },
     redTeeBtn: {
-        borderWidth: 2,
-        borderRadius: 3,
+        borderWidth: 1,
+        borderRadius: 5,
         marginHorizontal: 20,
         paddingHorizontal: 20,
         paddingVertical: 10,
         width: 100,
-
+        borderColor: "#9ea2db",
     },
     redTeeTxt: {
         fontSize: 16,
         alignSelf: 'center',
+        fontWeight: "500",
     },
     yellowTeeBtn: {
-        borderWidth: 2,
-        borderRadius: 3,
+        borderWidth: 1,
+        borderRadius: 5,
         marginHorizontal: 20,
         paddingHorizontal: 20,
         paddingVertical: 10,
@@ -40,6 +50,7 @@ const CalculationStyles = StyleSheet.create({
     yellowTeeTxt: {
         fontSize: 16,
         alignSelf: 'center',
+        fontWeight: "500",
     },
 
     // Handicap
@@ -50,6 +61,7 @@ const CalculationStyles = StyleSheet.create({
     },
     handicapTxt: {
         fontSize: 20,
+        fontWeight: "500",
     },
     handicapTxtInput: {
         marginLeft: 20,
@@ -59,7 +71,7 @@ const CalculationStyles = StyleSheet.create({
         width: 100,
         borderWidth: 1,
         borderRadius: 3,
-        borderColor: 'lightgray'
+        borderColor: '#9ea2db'
     },
 
     // Strokes
@@ -70,6 +82,7 @@ const CalculationStyles = StyleSheet.create({
     },
     strokesText: {
         fontSize: 20,
+        fontWeight: "500",
     },
     strokesTxtInput: {
         marginLeft: 20,
@@ -79,7 +92,7 @@ const CalculationStyles = StyleSheet.create({
         width: 100,
         borderWidth: 1,
         borderRadius: 3,
-        borderColor: 'lightgray'
+        borderColor: '#9ea2db'
     },
 
 
@@ -90,18 +103,22 @@ const CalculationStyles = StyleSheet.create({
         marginTop: 50,
     },
     calcBtn: {
-        borderRadius: 3,
+        borderRadius: 5,
         padding: 15,
         paddingHorizontal: 40,
-        backgroundColor: '#08b3f7',
         alignSelf: 'center',
 
     },
     calcBtnTxt: {
         fontSize: 20,
         color: 'white',
-        fontWeight: '500'
+        fontWeight: '500',
+
     },
+    linearGradient: {
+        alignSelf: 'center',
+        borderRadius: 5,
+    }
 })
 
 export default CalculationStyles

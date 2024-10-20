@@ -2,35 +2,19 @@ import { View, Text, Pressable, TextInput, ScrollView } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router';
 import HeaderComponent from "@/app/components/Header/Header";
-import Male9Styles from './Male9Styles';
 import { ALERT_TYPE, Dialog, AlertNotificationRoot, Toast } from 'react-native-alert-notification';
 import CalculationScreen from '@/app/components/CalculationScreen/CalculationScreen';
 
 const Male9 = () => {
 
 
-
-
-    /* 
-    Gul: 
-    Course Rating: 57.8
-    Slope Rating: 94
-
-    Röd:
-    Course Rating: 53.7
-    Slope Rating: 86
-
-    Par: 30
-    Second par: 30
-
-
-
-    (Strokes in 9 holes x 113/Slope Rating + second nine par + 0.5 x Course Handicap) – Course Rating.
-    (strokes in 9 holes * 113 ) / 94 + 30 + (0.5 * handicap)
-
-    variables: strokes, handicap, tee
-
-    (Adjusted Gross Score for 9 holes x 113/Slope Rating + second nine par + 0.5 x Course Handicap) – Course Rating
+    /*
+        (Strokes in 9 holes x 113/Slope Rating + second nine par + 0.5 x Course Handicap) – Course Rating.
+        (strokes in 9 holes * 113 ) / 94 + 30 + (0.5 * handicap)
+    
+        variables: strokes, handicap, tee
+    
+        (Adjusted Gross Score for 9 holes x 113/Slope Rating + second nine par + 0.5 x Course Handicap) – Course Rating
     */
 
     //Average of 10 rounds multiply by 0.96
@@ -49,6 +33,7 @@ const Male9 = () => {
 
     return (
         <ScrollView>
+            <HeaderComponent title={"Male 9"} hrefPath={"../JarlabankeCourses"} />
             <CalculationScreen
                 courseRatingRedTee={53.7}
                 slopeRatingRedTee={86}

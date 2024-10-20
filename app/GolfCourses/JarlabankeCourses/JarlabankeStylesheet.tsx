@@ -1,43 +1,6 @@
 import { StyleSheet } from "react-native"
 
 const JarlabankeStylesheet = StyleSheet.create({
-    goBackView: {
-        marginTop: 5,
-        height: 40,
-        justifyContent: 'center',
-        color: 'white',
-    },
-
-    backPressable: {
-        display: 'flex',
-        flexDirection: 'row',
-    },
-    backFlexViewLeft: {
-        flex: 1,
-    },
-    backFlexViewMiddle: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    backFlexViewRight: {
-        flex: 1,
-    },
-    backTitle: {
-        fontSize: 18,
-    },
-    backViewGradient: {
-        left: 0,
-        right: 0,
-        top: 0,
-        height: 10,
-    },
-
-    backImage: {
-        height: 40,
-        width: 15,
-        marginLeft: 10,
-    },
 
 
     hole9ViewContainer: {
@@ -47,7 +10,8 @@ const JarlabankeStylesheet = StyleSheet.create({
         marginTop: '10%',
     },
     hole9Title: {
-        fontSize: 16
+        fontSize: 20,
+        fontWeight: "500",
     },
 
     hole9ButtonContainer: {
@@ -61,7 +25,11 @@ const JarlabankeStylesheet = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         margin: 10,
+        borderRadius: 5,
+        borderWidth: 1,
+        borderColor: "#bac1e7",
     },
+
     hole9FemaleButton: {
         height: 55,
         width: 70,
@@ -69,6 +37,13 @@ const JarlabankeStylesheet = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         margin: 10,
+        borderRadius: 5,
+        borderWidth: 1,
+        borderColor: "#bac1e7",
+    },
+    textStyle: {
+        fontWeight: "500",
+        color: "#706abe",
     },
 
     buttonBorderShadow: {
@@ -83,14 +58,6 @@ const JarlabankeStylesheet = StyleSheet.create({
         elevation: 5,
         padding: 5,
     },
-
-    linearGradient: {
-        left: 5,
-        right: 5,
-        top: 5,
-        height: 5,
-    }
-
 
 
 })

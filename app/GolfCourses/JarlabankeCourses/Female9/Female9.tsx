@@ -1,12 +1,22 @@
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router';
+import HeaderComponent from '@/app/components/Header/Header';
+import CalculationScreen from '@/app/components/CalculationScreen/CalculationScreen';
 
 const Female9 = () => {
     return (
-        <View>
-            <Text>Female9</Text>
-        </View>
+        <ScrollView>
+            <HeaderComponent title={"Female 9"} hrefPath={"../JarlabankeCourses"} />
+            <CalculationScreen
+                courseRatingRedTee={56}
+                slopeRatingRedTee={88}
+                courseRatingYellowTee={58.5}
+                slopeRatingYellowTee={92}
+                coursePar={30}
+                courseSecondPar={30}
+            />
+        </ScrollView>
     )
 }
 

@@ -4,6 +4,7 @@ import CalculationStyles from './CalculationStyles';
 import { Link } from 'expo-router';
 import HeaderComponent from "../Header/Header";
 import { ALERT_TYPE, Dialog, AlertNotificationRoot, Toast } from 'react-native-alert-notification';
+import { LinearGradient } from 'expo-linear-gradient';
 
 
 interface CalcHCPValues {
@@ -89,25 +90,12 @@ const CalculationScreen = ({
     return (
         <AlertNotificationRoot>
             <ScrollView >
-                <HeaderComponent title={"Male 9"} hrefPath={"../JarlabankeCourses"} />
-
                 {/* Tee */}
                 <View style={CalculationStyles.teeContainer}>
                     <Text style={CalculationStyles.teeText}>Tee</Text>
                     <View style={CalculationStyles.teeButtonView}>
-                        <Pressable style={[CalculationStyles.redTeeBtn, TeeRed()]}
-                            onPress={() => {
-                                setCurTee('red');
-                            }}>
-                            <Text style={CalculationStyles.redTeeTxt}>Red</Text>
-                        </Pressable>
-
-
-                        <Pressable style={[CalculationStyles.yellowTeeBtn, TeeYellow()]} onPress={() => {
-                            setCurTee("yellow")
-                        }}>
-                            <Text style={CalculationStyles.yellowTeeTxt}>Yellow</Text>
-                        </Pressable>
+                        {TeeRed()}
+                        {TeeYellow()}
                     </View>
 
 
@@ -138,12 +126,20 @@ const CalculationScreen = ({
 
                 {/* Calc button */}
                 <View style={CalculationStyles.calcContainer}>
-                    <Pressable style={CalculationStyles.calcBtn}
-                        onPress={() => {
-                            CalculateHandicap()
-                        }}>
-                        <Text style={CalculationStyles.calcBtnTxt}>Calculate</Text>
-                    </Pressable>
+
+                    <LinearGradient
+                        // Button Linear Gradient
+                        colors={['#8586cf', '#9ea2db', '#bac1e7']}
+                        style={CalculationStyles.linearGradient}>
+
+                        <Pressable style={CalculationStyles.calcBtn}
+                            onPress={() => {
+                                CalculateHandicap()
+                            }}>
+                            <Text style={CalculationStyles.calcBtnTxt}>Calculate</Text>
+                        </Pressable>
+                    </LinearGradient>
+
                 </View>
 
             </ScrollView >
@@ -152,30 +148,68 @@ const CalculationScreen = ({
 
 
     function TeeRed() {
+        let teeStyle = []
+        let teeTxt = {}
+        let lgColors = ["#ffffff", "#ffffff", "#ffffff"]
 
         if (curTee == "red") {
-            return {
-                borderColor: 'red'
-            }
+
+            teeStyle = [{ borderColor: "#8586cf", backgroundColor: "#8586cf" }]
+            teeTxt = { color: "#ffffff" }
+            lgColors = ["#8586cf", "#9ea2db ", "#bac1e7"]
+
         } else {
-            return {
-                borderColor: 'lightgray'
-            }
+            teeStyle = [{ borderColor: '#8586cf' }]
+            teeTxt = { color: "#706abe" }
+            lgColors = ["#ffffff", "#ffffff", "#ffffff"]
         }
+
+        return (
+            <LinearGradient
+                colors={lgColors}
+            >
+                <Pressable style={[CalculationStyles.redTeeBtn, teeStyle]}
+                    onPress={() => {
+                        setCurTee('red');
+                    }}>
+                    <Text style={[CalculationStyles.redTeeTxt, teeTxt]}>Red</Text>
+                </Pressable>
+            </LinearGradient>
+
+        )
     }
 
     function TeeYellow() {
+        let teeStyle = []
+        let teeTxt = {}
+        let lgColors = ["#ffffff", "#ffffff", "#ffffff"]
 
         if (curTee == "yellow") {
-            return {
-                borderColor: 'yellow'
-            }
+
+            teeStyle = [{ borderColor: "#8586cf", backgroundColor: "#8586cf" }]
+            teeTxt = { color: "#ffffff" }
+            lgColors = ["#8586cf", "#9ea2db ", "#bac1e7"]
+
         } else {
-            return {
-                borderColor: 'lightgray'
-            }
+            teeStyle = [{ borderColor: '#8586cf' }]
+            teeTxt = { color: "#706abe" }
+            lgColors = ["#ffffff", "#ffffff", "#ffffff"]
         }
+
+        return (
+            <LinearGradient
+                colors={lgColors}
+            >
+                <Pressable style={[CalculationStyles.yellowTeeBtn, teeStyle]} onPress={() => {
+                    setCurTee("yellow")
+                }}>
+                    <Text style={[CalculationStyles.yellowTeeTxt, teeTxt]}>Yellow</Text>
+                </Pressable>
+            </LinearGradient>
+        )
+
     }
+
 
 
 }
