@@ -1,24 +1,18 @@
 import { Image, StyleSheet, Platform, View, Text, Button, Pressable, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 import { useLocalSearchParams } from 'expo-router';
 import { Link } from 'expo-router';
+import LoginScreen from './LoginScreen/LoginScreen';
 
 
 export default function HomeScreen() {
-
+  
 
   return (
     <View>
 
-      <View style={styles.homeView}>
-        <Text style={styles.welcomeText}>Welcome to Colf!</Text>
-        {/* ./CoursesListScreen/CoursesListScreen */}
-        <Link href={"./CoursesListScreen/CoursesListScreen"} asChild style={styles.continueButton}>
-          <Text style={styles.continueButtonText}>Continue to courses</Text>
-        </Link>
-      </View>
+      <LoginScreen />
 
     </View>
 

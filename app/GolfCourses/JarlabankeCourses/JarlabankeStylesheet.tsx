@@ -4,13 +4,13 @@ const JarlabankeStylesheet = StyleSheet.create({
 
 
     hole9ViewContainer: {
-        borderWidth: 1,
         width: '80%',
         alignSelf: 'center',
         marginTop: '10%',
     },
     hole9Title: {
         fontSize: 20,
+        color: "#706abe",
         fontWeight: "500",
     },
 
@@ -55,7 +55,7 @@ const JarlabankeStylesheet = StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
 
-        elevation: 5,
+        elevation: 10,
         padding: 5,
     },
 

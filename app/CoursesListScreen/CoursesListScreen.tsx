@@ -2,6 +2,7 @@ import { Image, StyleSheet, View, Text, TouchableOpacity, Pressable } from 'reac
 import { FlashList } from "@shopify/flash-list";
 import { Link } from 'expo-router';
 import CourseListStyles from './CourseListStyles';
+import { LinearGradient } from 'expo-linear-gradient';
 
 
 
@@ -26,11 +27,17 @@ export default function coursesListScreen() {
             <FlashList
                 data={courses}
                 renderItem={({ item }) => (
-                    <Link href={`../GolfCourses/${item.name}Courses/${item.name}Courses`} asChild>
-                        <Pressable style={CourseListStyles.textContainer}>
-                            <Text style={CourseListStyles.renderText}>{item.name}</Text>
-                        </Pressable>
-                    </Link>
+                    <View>
+                        <Link href={`../GolfCourses/${item.name}Courses/${item.name}Courses`} asChild
+                            style={[CourseListStyles.coursePressable, CourseListStyles.borderShadow]}>
+                            <Pressable>
+                                <Text style={CourseListStyles.renderText}>{item.name}</Text>
+                            </Pressable>
+
+                        </Link>
+                        <View style={CourseListStyles.separationBorder} />
+                    </View>
+
                 )}
                 estimatedItemSize={5}
             />

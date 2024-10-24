@@ -23,7 +23,7 @@ const HeaderStyles = StyleSheet.create({
         flex: 1,
     },
     backTitle: {
-        fontSize: 22,
+        fontSize: 24,
     },
     backViewGradient: {
         left: 0,
