@@ -1,6 +1,7 @@
 import { View, Text, Image, Pressable } from 'react-native'
 import React from 'react'
 import { LoginScreenStyles } from './LoginScreenStyles'
+import { Link } from 'expo-router'
 
 const LoginScreen = () => {
     /* 
@@ -16,16 +17,20 @@ const LoginScreen = () => {
         <View>
             <Text style={LoginScreenStyles.titleText}>Welcome to Colf</Text>
             <Image source={require("@/assets/images/swing.png")} style={LoginScreenStyles.swingImage} />
-            <Image source={require("@/assets/images/golf-ball.png")} style={LoginScreenStyles.ballImage}/> 
+            <Image source={require("@/assets/images/golf-ball.png")} style={LoginScreenStyles.ballImage} />
 
-            <Pressable style={[LoginScreenStyles.loginButtonPressable, LoginScreenStyles.borderShadow]}
-                onPress={() => {
-                    console.log("Login button pressed")
-                }}>
-                <Text style={LoginScreenStyles.loginButtonText}>Login</Text>
-            </Pressable>
+            <Link href={"../CoursesListScreen/CoursesListScreen"} asChild
+                style={[LoginScreenStyles.loginButtonPressable, LoginScreenStyles.borderShadow]}>
+                <Pressable
+                    onPress={() => {
+                        console.log("Login button pressed")
+                    }}>
+                    <Text style={LoginScreenStyles.loginButtonText}>Login</Text>
+                </Pressable>
+            </Link>
+
             <Pressable style={LoginScreenStyles.registerPressable}
-                onPress= {() => {
+                onPress={() => {
                     console.log("Register button pressed")
                 }}>
                 <Text style={LoginScreenStyles.registerTest}>Don't have an account?</Text>

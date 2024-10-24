@@ -23,6 +23,9 @@ export default function coursesListScreen() {
 
     return (
         <View style={CourseListStyles.background}>
+
+            {/* Logout button? */}
+
             <Text style={CourseListStyles.screenTitle}>Golf courses</Text>
             <FlashList
                 data={courses}
