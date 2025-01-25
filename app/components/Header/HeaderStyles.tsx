@@ -5,6 +5,7 @@ const HeaderStyles = StyleSheet.create({
         marginTop: 5,
         justifyContent: 'center',
         color: 'white',
+        marginBottom: 10
     },
     backPressable: {
         display: 'flex',

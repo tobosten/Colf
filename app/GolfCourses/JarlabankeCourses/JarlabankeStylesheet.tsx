@@ -3,22 +3,21 @@ import { StyleSheet } from "react-native"
 const JarlabankeStylesheet = StyleSheet.create({
 
 
-    hole9ViewContainer: {
+    holeViewContainer: {
         width: '80%',
         alignSelf: 'center',
-        marginTop: '10%',
     },
-    hole9Title: {
+    holeTitle: {
         fontSize: 20,
         color: "#706abe",
         fontWeight: "500",
     },
 
-    hole9ButtonContainer: {
+    holeButtonContainer: {
         flexDirection: 'row',
     },
 
-    hole9MaleButton: {
+    holeMaleButton: {
         height: 55,
         width: 70,
         backgroundColor: 'white',
@@ -30,7 +29,7 @@ const JarlabankeStylesheet = StyleSheet.create({
         borderColor: "#bac1e7",
     },
 
-    hole9FemaleButton: {
+    holeFemaleButton: {
         height: 55,
         width: 70,
         backgroundColor: 'white',
@@ -58,6 +57,10 @@ const JarlabankeStylesheet = StyleSheet.create({
         elevation: 10,
         padding: 5,
     },
+
+    hole18Container: {
+        marginTop: 10,
+    }
 
 
 })

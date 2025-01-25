@@ -13,33 +13,72 @@ const JarlabankeCourses = () => {
         hrefPath={"../../../CoursesListScreen/CoursesListScreen"}
       />
       <View>
-        <View style={JarlabankeStylesheet.hole9ViewContainer}>
-          <Text style={JarlabankeStylesheet.hole9Title}>9-holes</Text>
-          <View style={JarlabankeStylesheet.hole9ButtonContainer}>
+        {/* 9 hole container */}
+        <View style={JarlabankeStylesheet.holeViewContainer}>
+          <Text style={JarlabankeStylesheet.holeTitle}>9-holes</Text>
+          <View style={JarlabankeStylesheet.holeButtonContainer}>
             <Link
-              href={"./Male9/Male9"}
+              href={"./MaleCourses/Male9"}
               asChild
               style={[
-                JarlabankeStylesheet.hole9MaleButton,
+                JarlabankeStylesheet.holeMaleButton,
                 JarlabankeStylesheet.buttonBorderShadow,
               ]}
             >
               <Pressable>
-                <Text style={JarlabankeStylesheet.textStyle}>9-male</Text>
+                <Text style={JarlabankeStylesheet.textStyle}>Male</Text>
               </Pressable>
             </Link>
             <Link
-              href={"./Female9/Female9"}
+              href={"./FemaleCourses/Female9"}
               asChild
               style={[
-                JarlabankeStylesheet.hole9FemaleButton,
+                JarlabankeStylesheet.holeFemaleButton,
                 JarlabankeStylesheet.buttonBorderShadow,
               ]}
             >
               <Pressable>
-                <Text style={JarlabankeStylesheet.textStyle}>9-female</Text>
+                <Text style={JarlabankeStylesheet.textStyle}>Female</Text>
               </Pressable>
             </Link>
+          </View>
+        </View>
+
+        {/* 18 hole container */}
+        <View>
+          <View
+            style={[
+              JarlabankeStylesheet.holeViewContainer,
+              JarlabankeStylesheet.hole18Container,
+            ]}
+          >
+            <Text style={JarlabankeStylesheet.holeTitle}>12-holes</Text>
+            <View style={JarlabankeStylesheet.holeButtonContainer}>
+              <Link
+                href={"./MaleCourses/Male12"}
+                asChild
+                style={[
+                  JarlabankeStylesheet.holeMaleButton,
+                  JarlabankeStylesheet.buttonBorderShadow,
+                ]}
+              >
+                <Pressable>
+                  <Text style={JarlabankeStylesheet.textStyle}>Male</Text>
+                </Pressable>
+              </Link>
+              <Link
+                href={"./FemaleCourses/Female12"}
+                asChild
+                style={[
+                  JarlabankeStylesheet.holeFemaleButton,
+                  JarlabankeStylesheet.buttonBorderShadow,
+                ]}
+              >
+                <Pressable>
+                  <Text style={JarlabankeStylesheet.textStyle}>Female</Text>
+                </Pressable>
+              </Link>
+            </View>
           </View>
         </View>
       </View>

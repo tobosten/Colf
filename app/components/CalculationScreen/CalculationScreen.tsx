@@ -38,19 +38,8 @@ const CalculationScreen = ({
 
   //var test = (45 - 26.65) * (113 / 86)
 
-  /* 
-    Gul: 
-    Course Rating: 57.8
-    Slope Rating: 94
 
-    Röd:
-    Course Rating: 53.7
-    Slope Rating: 86
-
-    Par: 30
-    Second par: 30
-    */
-
+  /* This ONLY calculates 9-hole red tee course */
   function CalculateHandicap() {
     // (Score - Rating) * (113 / Slope) 18-hole
     // Calcs 9-hole HCP:  [ Handicap Index / 2 ] x [ 9 hole Slope Rating / 113 ] + [ 9 hole Course Rating - 9 hole Par ]
@@ -143,6 +132,7 @@ const CalculationScreen = ({
     </AlertNotificationRoot>
   );
 
+  //Color change on tee txt when pressed
   function TeeRed() {
     let teeStyle = [];
     let teeTxt = {};

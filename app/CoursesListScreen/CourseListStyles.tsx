@@ -1,3 +1,4 @@
+import { FlashList } from "@shopify/flash-list";
 import { StyleSheet } from "react-native";
 
 /* 
@@ -23,7 +24,6 @@ const CourseListStyles = StyleSheet.create({
     fontWeight: "500",
     color: "#706abe",
   },
-
   coursePressable: {
     width: "80%",
     flexDirection: "row",
