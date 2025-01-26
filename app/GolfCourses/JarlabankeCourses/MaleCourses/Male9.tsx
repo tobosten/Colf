@@ -33,7 +33,7 @@ const Male9 = () => {
 
     return (
         <ScrollView>
-            <HeaderComponent title={"Male 9"} hrefPath={"../JarlabankeCourses"} />
+            <HeaderComponent title={"9 Male"} hrefPath={"../JarlabankeCourses"} />
             <CalculationScreen
                 courseRatingRedTee={53.7}
                 slopeRatingRedTee={86}

@@ -20,8 +20,7 @@ export default function coursesListScreen() {
 
   let courses: Courses[] = [
     { name: "Jarlabanke", id: 1 },
-    { name: "Jarlabanke2", id: 2 },
-    { name: "Jarlabanke3", id: 3 },
+    { name: "Vallentuna", id: 2 },
   ];
 
   return (

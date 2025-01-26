@@ -7,7 +7,7 @@ import CalculationScreen from '@/app/components/CalculationScreen/CalculationScr
 const Female9 = () => {
     return (
         <ScrollView>
-            <HeaderComponent title={"Female 9"} hrefPath={"../JarlabankeCourses"} />
+            <HeaderComponent title={"9 Female"} hrefPath={"../JarlabankeCourses"} />
             <CalculationScreen
                 courseRatingRedTee={56}
                 slopeRatingRedTee={88}

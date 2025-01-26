@@ -2,7 +2,7 @@ import { View, Text, Image, Pressable } from "react-native";
 import React from "react";
 import { Link } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
-import JarlabankeStylesheet from "./JarlabankeStylesheet";
+import GolfCoursesStylesheet from "../GolfCoursesStylesheet";
 import HeaderComponent from "../../components/Header/Header";
 
 const JarlabankeCourses = () => {
@@ -14,31 +14,31 @@ const JarlabankeCourses = () => {
       />
       <View>
         {/* 9 hole container */}
-        <View style={JarlabankeStylesheet.holeViewContainer}>
-          <Text style={JarlabankeStylesheet.holeTitle}>9-holes</Text>
-          <View style={JarlabankeStylesheet.holeButtonContainer}>
+        <View style={GolfCoursesStylesheet.holeViewContainer}>
+          <Text style={GolfCoursesStylesheet.holeTitle}>9-holes</Text>
+          <View style={GolfCoursesStylesheet.holeButtonContainer}>
             <Link
               href={"./MaleCourses/Male9"}
               asChild
               style={[
-                JarlabankeStylesheet.holeMaleButton,
-                JarlabankeStylesheet.buttonBorderShadow,
+                GolfCoursesStylesheet.holeMaleButton,
+                GolfCoursesStylesheet.buttonBorderShadow,
               ]}
             >
               <Pressable>
-                <Text style={JarlabankeStylesheet.textStyle}>Male</Text>
+                <Text style={GolfCoursesStylesheet.textStyle}>Male</Text>
               </Pressable>
             </Link>
             <Link
               href={"./FemaleCourses/Female9"}
               asChild
               style={[
-                JarlabankeStylesheet.holeFemaleButton,
-                JarlabankeStylesheet.buttonBorderShadow,
+                GolfCoursesStylesheet.holeFemaleButton,
+                GolfCoursesStylesheet.buttonBorderShadow,
               ]}
             >
               <Pressable>
-                <Text style={JarlabankeStylesheet.textStyle}>Female</Text>
+                <Text style={GolfCoursesStylesheet.textStyle}>Female</Text>
               </Pressable>
             </Link>
           </View>
@@ -48,34 +48,34 @@ const JarlabankeCourses = () => {
         <View>
           <View
             style={[
-              JarlabankeStylesheet.holeViewContainer,
-              JarlabankeStylesheet.hole18Container,
+              GolfCoursesStylesheet.holeViewContainer,
+              GolfCoursesStylesheet.hole18Container,
             ]}
           >
-            <Text style={JarlabankeStylesheet.holeTitle}>12-holes</Text>
-            <View style={JarlabankeStylesheet.holeButtonContainer}>
+            <Text style={GolfCoursesStylesheet.holeTitle}>12-holes</Text>
+            <View style={GolfCoursesStylesheet.holeButtonContainer}>
               <Link
                 href={"./MaleCourses/Male12"}
                 asChild
                 style={[
-                  JarlabankeStylesheet.holeMaleButton,
-                  JarlabankeStylesheet.buttonBorderShadow,
+                  GolfCoursesStylesheet.holeMaleButton,
+                  GolfCoursesStylesheet.buttonBorderShadow,
                 ]}
               >
                 <Pressable>
-                  <Text style={JarlabankeStylesheet.textStyle}>Male</Text>
+                  <Text style={GolfCoursesStylesheet.textStyle}>Male</Text>
                 </Pressable>
               </Link>
               <Link
                 href={"./FemaleCourses/Female12"}
                 asChild
                 style={[
-                  JarlabankeStylesheet.holeFemaleButton,
-                  JarlabankeStylesheet.buttonBorderShadow,
+                  GolfCoursesStylesheet.holeFemaleButton,
+                  GolfCoursesStylesheet.buttonBorderShadow,
                 ]}
               >
                 <Pressable>
-                  <Text style={JarlabankeStylesheet.textStyle}>Female</Text>
+                  <Text style={GolfCoursesStylesheet.textStyle}>Female</Text>
                 </Pressable>
               </Link>
             </View>
