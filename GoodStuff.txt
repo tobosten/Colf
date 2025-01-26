@@ -21,3 +21,21 @@ Ex.
 
 
 //Colors: #706abe #8586cf  #9ea2db  #bac1e7
+
+
+Vallentuna GK:
+Par: 72
+Male:
+    Red:
+        Course Rating: 65.6
+        Slope Rating: 117
+    Yellow:
+        Course Rating: 70.4
+        Slope Ratign: 126
+Woman:
+    Red:
+        Course Rating: 70.3
+        SlopeRating: 122
+    Yellow:
+        Course Rating: 76.1
+        Slope Rating: 135
