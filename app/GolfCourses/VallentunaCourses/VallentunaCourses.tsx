@@ -16,7 +16,7 @@ const VallentunaCourses = () => {
         <Text style={GolfCoursesStylesheet.holeTitle}>18-holes</Text>
         <View style={GolfCoursesStylesheet.holeButtonContainer}>
           <Link
-            href={"./MaleCourses/"}
+            href={"./Courses/Male18"}
             asChild
             style={[
               GolfCoursesStylesheet.holeMaleButton,
@@ -28,7 +28,7 @@ const VallentunaCourses = () => {
             </Pressable>
           </Link>
           <Link
-            href={"./FemaleCourses/"}
+            href={"./Courses/Female18"}
             asChild
             style={[
               GolfCoursesStylesheet.holeFemaleButton,
